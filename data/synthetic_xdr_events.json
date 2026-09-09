@@ -1,0 +1,68 @@
+[
+  {
+    "event_id": "evt-001",
+    "timestamp": "2026-09-09T09:00:00Z",
+    "device_id": "ws-fin-014",
+    "account": "LAB\\analyst1",
+    "event_type": "process",
+    "action": "created",
+    "process_name": "powershell.exe",
+    "details": {
+      "command_line": "powershell.exe -NoProfile -EncodedCommand SYNTHETIC_TEST_VALUE",
+      "parent_process": "explorer.exe"
+    }
+  },
+  {
+    "event_id": "evt-002",
+    "timestamp": "2026-09-09T09:03:00Z",
+    "device_id": "ws-fin-014",
+    "account": "LAB\\analyst1",
+    "event_type": "security_control",
+    "action": "tamper_attempt",
+    "process_name": "lab-control-test.exe",
+    "details": {
+      "control": "endpoint_protection",
+      "result": "blocked"
+    }
+  },
+  {
+    "event_id": "evt-003",
+    "timestamp": "2026-09-09T09:10:00Z",
+    "device_id": "srv-app-01",
+    "account": "LAB\\svc_ops",
+    "event_type": "remote_logon",
+    "action": "success",
+    "remote_ip": "10.20.30.40",
+    "details": {"logon_type": "remote_interactive"}
+  },
+  {
+    "event_id": "evt-004",
+    "timestamp": "2026-09-09T09:15:00Z",
+    "device_id": "srv-db-01",
+    "account": "LAB\\svc_ops",
+    "event_type": "remote_logon",
+    "action": "success",
+    "remote_ip": "10.20.30.40",
+    "details": {"logon_type": "network"}
+  },
+  {
+    "event_id": "evt-005",
+    "timestamp": "2026-09-09T09:19:00Z",
+    "device_id": "srv-web-01",
+    "account": "LAB\\svc_ops",
+    "event_type": "remote_logon",
+    "action": "success",
+    "remote_ip": "10.20.30.40",
+    "details": {"logon_type": "network"}
+  },
+  {
+    "event_id": "evt-006",
+    "timestamp": "2026-09-09T10:00:00Z",
+    "device_id": "ws-eng-021",
+    "account": "LAB\\engineer1",
+    "event_type": "process",
+    "action": "created",
+    "process_name": "notepad.exe",
+    "details": {"command_line": "notepad.exe notes.txt"}
+  }
+]
